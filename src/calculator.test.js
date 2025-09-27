@@ -72,3 +72,21 @@ it('divide method tests', () => {
     })
 
 })
+
+it('multiply method test', () => {
+    const multiplyCases = [
+        {
+            a: 5,
+            b: 5,
+            expected: 25
+        },
+        {
+            a: 54,
+            b: 349,
+            expected: 18846
+        }
+    ]
+    multiplyCases.forEach((item) => {
+        expect(calculator.multiply(item.a, item.b)).toBe(item.expected);
+    })
+})
