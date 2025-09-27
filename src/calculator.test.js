@@ -3,7 +3,7 @@ it('Calculator class function exist', () => {
     expect(typeof Calculator).toBe('function');
 })
 
+const calculator = new Calculator();
 it('instance of Calculator class', () => {
-    var calculator = new Calculator();
     expect(calculator instanceof Calculator).toBe(true);
 })
