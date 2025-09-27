@@ -3,8 +3,8 @@ export default class Calculator {
         return a+b;
     }
 
-    subtract = () => {
-
+    subtract = (a, b) => {
+        return a - b;
     }
 
     divide = () => {
