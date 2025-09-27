@@ -13,7 +13,7 @@ export default class Calculator {
 
     }
 
-    multiply = () => {
-
+    multiply = (a, b) => {
+        return a * b;
     }
 }
