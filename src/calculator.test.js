@@ -15,6 +15,21 @@ it('add, subtract, divide, multiply exist', () => {
     expect(calculator.multiply).toBeDefined();
 });
 
-it('add 5+10 = 15', () => {
-    expect(calculator.add(5+10)).toBe(15);
+it('add method tests', () => {
+    addCases = [
+        {
+            a: 5,
+            b: 10,
+            expected: 15,
+        },
+        {
+            a: 25,
+            b: 3028,
+            expected: 3053,
+        }
+    ];
+
+    addCases.forEach((item) => {
+        expect(calculator.add(item.a, item.b)).toBe(item.expected);
+    })
 })
