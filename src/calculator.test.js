@@ -33,3 +33,22 @@ it('add method tests', () => {
         expect(calculator.add(item.a, item.b)).toBe(item.expected);
     })
 })
+
+it('subtract method tests', () => {
+    const subtractCases = [
+        {
+            a: 5,
+            b: 10,
+            expected: -5,
+        },
+        {
+            a: 3028,
+            b: 25,
+            expected: 3003
+        }
+    ]
+
+    subtractCases.forEach((item) => {
+        expect(calculator.subtract(item.a, item.b)).toBe(item.expected);
+    })
+})
