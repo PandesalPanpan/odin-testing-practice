@@ -52,3 +52,23 @@ it('subtract method tests', () => {
         expect(calculator.subtract(item.a, item.b)).toBe(item.expected);
     })
 })
+
+it('divide method tests', () => {
+    const divideCases = [
+        {
+            a: 5,
+            b: 3,
+            expected: 1.67
+        },
+        {
+            a: 5489,
+            b: 34,
+            expected: 161.44
+        }
+    ]
+
+    divideCases.forEach((item) => {
+        expect(calculator.divide(item.a, item.b)).toBeCloseTo(item.expected);
+    })
+
+})
