@@ -7,7 +7,9 @@ export default class Calculator {
         return a - b;
     }
 
-    divide = () => {
+    divide = (a, b) => {
+        let result = (a / b).toFixed(2);
+        return parseFloat(result);
 
     }
 
